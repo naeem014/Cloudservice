@@ -1,0 +1,10 @@
+{
+  "name": "cloud_server",
+  "scripts": {
+    "start": "node cloud_server.js"
+  },
+  "dependencies": {
+    "hashmap": "^2.0.4",
+    "socket.io": "^1.4.5"
+  }
+}
