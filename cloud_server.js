@@ -1,10 +1,6 @@
 var hashmap = require('hashmap');
-var server = require('http').createServer(function (request, response) {
-	fs.readFile('comm.html', 'utf-8', function(err, data) {
-		response.writeHead(200, {'Content-Type' : 'text/html'});
-		response.end(data);
-	});
-}).listen(process.env.PORT || 1111);
+
+var server = require('http').createServer().listen(process.env.PORT || 1111);
 var io = require('socket.io')(server);
 
 var client_server = 0;
